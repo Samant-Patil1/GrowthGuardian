@@ -33,7 +33,7 @@ body{
 	font-family: P-Light;
 	background-color: black;
 	color:white;
-	background-image: url("https://naturalfarming.niti.gov.in/wp-content/uploads/2020/12/sdg-natural-farm.jpg");
+	background-image: url("https://img.freepik.com/premium-photo/sustainable-development-global-goals-corporate-social-responsibility_199369-2426.jpg");
 	background-size: cover;
 	height: 100%;
 	text-align:center;
@@ -48,7 +48,7 @@ input{
 	.centre{
 		border-radius:10vw;
 		width:50%;
-		margin-bottom: 5vw;
+		margin-bottom: 15vw;
 		display: inline-block;
 		text-align: center;
 		margin-top: 5vw;
