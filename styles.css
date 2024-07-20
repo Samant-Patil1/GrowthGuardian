@@ -30,7 +30,8 @@ main {
     max-width: 900px;
     margin: 0 auto;
     position: relative;
-    z-index: 1; /* Ensure content is above background image */
+    z-index: 0;
+    margin-bottom: 10vw;/* Ensure content is above background image */
 }
 
 section {
