@@ -5,64 +5,87 @@ body, h1, h2, h3, p, ul, li {
     box-sizing: border-box;
 }
 
-/* General styling */
+/* Body and sidebar styling */
 body {
     font-family: 'Arial', sans-serif;
     color: #fff;
     line-height: 1.6;
     background: url('background-image.jpg') no-repeat center center fixed; 
     background-size: cover;
-}
-
-.container {
-    width: 90%;
-    margin: 0 auto;
-}
-
-/* Header styling */
-header {
-    background: rgba(0, 0, 0, 0.6); /* Dark semi-transparent background for header */
-    color: #fff;
-    padding: 1rem 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
-    z-index: 1000;
-}
-
-header .container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header h1 {
-    font-size: 1.8rem;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
+    min-height: 100vh;
     margin: 0;
 }
 
-nav ul li {
-    margin-left: 2rem;
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: -250px;
+    transition: 0.3s;
+    overflow: hidden;
+    z-index: 1000;
 }
 
-nav ul li a {
+.sidebar.open {
+    left: 0;
+}
+
+.logo-details {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background: #333;
+}
+
+.logo_name {
+    font-size: 1.5rem;
     color: #fff;
+}
+
+.bx-menu {
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-list li {
+    margin: 1rem 0;
+}
+
+.nav-list .link {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1rem;
     text-decoration: none;
-    font-size: 1rem;
+    color: #fff;
+    transition: background 0.3s;
 }
 
-nav ul li a:hover {
-    text-decoration: underline;
+.nav-list .link:hover {
+    background: #575757;
 }
 
-/* Hero section styling */
+.nav-list .link .bx {
+    font-size: 1.2rem;
+    margin-right: 0.75rem;
+}
+
+.main-content {
+    margin-left: 250px;
+    padding: 2rem;
+    width: calc(100% - 250px);
+    transition: margin-left 0.3s;
+}
+
 .hero {
     height: 100vh;
     display: flex;
@@ -70,14 +93,13 @@ nav ul li a:hover {
     justify-content: center;
     background: rgba(0, 0, 0, 0.5); /* Dark overlay for text visibility */
     text-align: center;
-    padding: 0 1rem;
 }
 
 .hero-content {
     max-width: 800px;
 }
 
-.hero-content h2 {
+.hero-content h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
 }
@@ -133,12 +155,11 @@ h2 {
 
 /* Footer styling */
 footer {
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.7);
     color: #fff;
     text-align: center;
     padding: 1rem;
     position: fixed;
     width: 100%;
     bottom: 0;
-    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
 }
