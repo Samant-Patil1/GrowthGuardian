@@ -1,0 +1,270 @@
+@font-face{
+    font-family:P-Light;
+    src: url('https://eshsrtiranga.github.io/fonts/Poppins-Light.woff') format('woff');
+  }
+
+@keyframes fadeIn {
+            0% {opacity: 0;}
+            from{
+
+            	transform: translateY(10vw);
+
+            }
+
+            to{
+
+            	transform: translateY(0vw);
+
+            }
+            100% {opacity: 1;}
+         }
+
+
+	.page {
+      padding-left:2vw;
+      padding-right:2vw;
+			background-repeat:no-repeat;
+			background-size:100% 100%;
+		}
+
+
+body{
+	user-select:none;
+	font-family: P-Light;
+	background-color: black;
+	color:white;
+	background-image: url("https://raw.githubusercontent.com/ESHSRTiranga-team/tiranga2024.github.io/main/pexels-navneet-shanu-202773-672630.jpg");
+	background-size: cover;
+	height: 100%;
+	text-align:center;
+	font-size:1.7vw;
+}
+
+input{
+    border:.1vw solid white;
+}
+
+	
+	.centre{
+		border-radius:10vw;
+		width:50%;
+		margin-bottom: 5vw;
+		display: inline-block;
+		text-align: center;
+		margin-top: 5vw;
+		align-items: center;
+		flex-direction: column;
+		background: rgba(26, 26, 26, 0.97);
+		box-shadow: 0 0 1vw rgba(0, 0, 0, 2);
+		animation: fadeIn 3.5s;
+	}
+
+	.logo{
+		height: 10vw;
+		width: 10vw;
+		margin-top: 2.5vw;
+		animation: fadeIn 2.5s;
+	}
+
+	.number{
+    text-align: center;
+		height: 2vw;
+		width: 25vw;
+		margin-top: 2vw;
+		margin-bottom: 1vw;
+		outline: none;
+		border-radius: 4vw;
+		background: transparent;
+		padding: 1vw;
+		font-size: 1.3vw;
+		color: white;
+		animation: fadeIn 1s;
+
+	}
+
+	.submitbutton{
+		font-size:1.4vw;
+		margin-top: 3vw;
+		margin-bottom: 4.5vw;
+		padding: 1vw;
+		width: 15vw;
+		height: 5vw;
+		border: none;
+		border-radius: 10vw;
+		color: #1A1A1A;
+		background-color: white;
+		animation: fadeIn 0.5s;
+		transition: color 1s, background-color 1s;
+		transition: all 0.5s;
+	}
+
+	.submitbutton:hover{
+		color: white;
+		background-color: #1A1A1A;
+		border:.1vw solid white;
+		cursor: pointer;
+	}
+
+	.submitbutton:active{
+		opacity: 0.6;
+	}
+
+	.School{
+		text-align: center;
+		display: inline;
+		width: 25vw;
+		margin-top: 2vw;
+		margin-bottom: 1vw;
+		outline: none;
+		border-radius: 4vw;
+		background: transparent;
+		padding: 1vw;
+		font-size: 1.3vw;
+		color: white;
+		animation: fadeIn 1.5s;
+	}
+
+		.Address{
+			text-align: center;
+			width: 25vw;
+			margin-top: 2vw;
+			margin-bottom: 1vw;
+			outline: none;
+			border-radius: 4vw;
+			background: transparent;
+			padding: 1vw;
+			font-size: 1.3vw;
+			color: white;
+			animation: fadeIn 1.5s;
+	}
+
+	.name{
+		font-size:4vw;
+		color: white;
+		font-family: P-Light;
+		animation: fadeIn 1.4;
+	}
+
+	.link{
+			font-size:4vw;
+			color: white;
+			font-family: P-Light;
+			animation: fadeIn 1.4;
+		}
+
+
+
+	  .dropdown {
+    position: relative;
+    display: inline-block;
+    user-select: none;
+    transition: all 0.4s;
+  }
+
+  .dropbtn {
+    width: 10vw;
+    height: 4vw;
+	padding:0.5vw;
+    border-radius: 10vw;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+	background: transparent;
+    color: white;
+    font-size: 1.6vw;
+    border: .1vw solid white;
+    cursor: pointer;
+    transition: all 0.4s;
+  }
+  
+  .dropdown-content {
+    display: none;
+    border-radius:1vw ;
+    background-color: #1A1A1A;
+    text-align:left;
+    padding: 2vw;
+    color:white;
+    min-width: 16vw;
+    box-shadow: 0vw .8vw .16vw 0vw rgba(0,0,0,0.2);
+    z-index: 1;
+    transition: all 0.4s;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: white;
+	color:#1A1A1A;
+  }
+
+label{
+	margin-top: 2vw;
+    font-size: 2vw;
+    color:white;
+}
+
+.textInput{
+    margin-bottom: 1vw;
+    color:white;
+    border:.1vw solid white;
+    width: 20vw;
+    height: 2vw;
+    border-radius: .5vw;
+}
+
+.checkBox{
+	height:2vw;
+	width:2vw
+}
+
+select{
+    outline: none;
+    border-radius: .5vw;
+    width:10vw;
+    height:3vw;
+    border: none;
+    background-color: white;
+}
+
+
+@media (max-width:840px){
+	.centre{
+		font-size:3vw;
+		width:100%;
+	}
+	.School{
+		font-size:3vw;
+		width: 50vw;
+		height:5vw;
+	}
+	.Address{
+		font-size:3vw;
+		width: 50vw;
+		height:5vw;
+	}
+	.number{
+		font-size:3vw;
+		width: 50vw;
+		height:5vw;
+	}
+	
+	.logo{
+		 width: 15vw;
+		height:15vw;
+	}
+	
+	.name{
+		font-size: 6vw;
+	}
+	
+	.dropbtn{
+		width:16vw;
+		height:7vw;
+		font-size: 2vw;
+	}
+	.checkBox{
+		width:4vw;
+		height:4vw;
+	}
+}
