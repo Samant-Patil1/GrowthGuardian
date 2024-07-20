@@ -1,222 +1,126 @@
 <!DOCTYPE html>
-<html><head>
-	<meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="reg.css">
-	<link rel="stylesheet" href="common.css">
-	<link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet">
-	<title>GrowthGuardian</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriEdu Vision</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body class="page">
-<div class="sidebar">
-	<div class="logo-details">
-	  
-	  <div class="logo_name">Shark Tank 2024</div>
-	  <i class="bx bx-menu" id="btn"></i>
-	</div>
-
-
-	<ul class="nav-list">
-	  <li>
-		
-	  </li>
-	  <li>
-		<a href="https://docs.google.com/presentation/d/1UWsHsnuQ-4LU7eCYTS5xhPUomgjiBfxq/edit?usp=sharing&amp;ouid=112961333319649154689&amp;rtpof=true&amp;sd=true class=" link"="">
-		  <i class="bx bx-calendar"></i>
-		  <span class="links_name">Events</span>
-		</a>
-	  </li>
-	  <li>
-		
-	  </li>
-	</ul>
-  </div>
-
-
-
-	<div class="centre">
-
-		<div>
-
-			<img src="https://eurolitfest.github.io/Home/images/logo.png" class="logo">
-
-		</div>
-
-		<h1 class="name">Growth Guardian</h1>
-
-		<form id="registerForm" method="GET" name="submit-to-google-sheet">
-
-				<input id="School Name" placeholder="School Name" type="Text" name="School Name" class="School" required="">
-
-				<input id="Address" placeholder="Address" type="text" name="Address" class="Address" required="">
-				
-				<input id="Mobile Number" placeholder="Mobile Number" type="tel" name="Mobile Number" class="number" required="">
-				
-				<input id="Email" placeholder="Email" type="email" name="Email" class="number">
-	<br><br>
-	
-        <h3>Enquire now, For Further info</h3>
-    <div id="cat1" class="dropdown">
-        <button type="button" class="dropbtn">About</button>
-        <div class="dropdown-content">
-	<input id="C1-DD" class="checkBox" name="Star Style Showdown" type="checkbox" value="Yes"> Star Style Showdown - Rs. 100<br>
-        <input id="C1-PD" class="checkBox" name="Flaunt And Express" type="checkbox" value="Yes"> Flaunt And Express - Rs. 100<br>
-	
-        </div>
-      </div>
-
-	<br><br>
-	<div id="cat2" class="dropdown">
-		<button id="c2b" type="button" class="dropbtn">Buisness Usecases</button>
-		<div class="dropdown-content">
-		<input id="C1-PR" class="checkBox" name="Soul Speaks" type="checkbox" value="Yes"> Soul Speaks - Rs. 100<br>
-		<input id="C1-RR" class="checkBox" name="Book Binge" type="checkbox" value="Yes"> Book Binge - Rs. 100<br>
-		</div>
-	</div>
-
-
-	<br><br>
-	<div id="cat3" class="dropdown">
-		<button id="c3b" type="button" class="dropbtn">Buisness Plan</button>
-		<div class="dropdown-content">
-		<input id="C2-DT" class="checkBox" name="The Story Teller's Realm" type="checkbox" value="Yes"> The Story Tellers' Realm- Rs. 100<br>
-		<input id="C2-BW" class="checkBox" name="Bin To Brilliance" type="checkbox" value="Yes"> Bin To Brilliance - Rs. 200<br>
-		<input id="C2-SS" class="checkBox" name="Songster" type="checkbox" value="Yes"> Songster - Rs. 100<br>
-		<input id="C2-ST" class="checkBox" name="A Thought Bubble" type="checkbox" value="Yes"> A Thought Bubble - Rs. 100<br>
-		</div>
-	</div>
-		
-	<br>
-	
-
-	
-	
-
-	
-	
-				
-				<button class="submitbutton" id="submitbutton" type="submit" name="submit">Continue</button>
-
-		</form>
-		
-	</div>
-
-<script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbzslVLM7m-Efftn6rxMt3Xr8oNEVzkgJbcyFacIaaSl68uzdTGiOhGRW9WFHgGbAzAq-g/exec'
-  const form = document.forms['submit-to-google-sheet']
-
-  form.addEventListener('submit', e => {
-  				e.preventDefault()
-	  			fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-				let name = document.getElementById("School Name");
-				let address = document.getElementById("Address");
-				let number = document.getElementById("Mobile Number");
-				let email = document.getElementById("Email");
-
-				let C1DD = document.getElementById("C1-DD");
-				let C1PD = document.getElementById("C1-PD");
-				var events1Dict = {C1DD:C1DD.checked, C1PD:C1PD.checked}
-				
-				let C2DT = document.getElementById("C1-PR");
-				let C2BW = document.getElementById("C1-RR");
-				var events2Dict = {C2DT:C2DT.checked,C2BW:C2BW.checked}
-
-				let C3SMM = document.getElementById("C2-DT");
-				let C3BOW = document.getElementById("C2-BW");
-				let C3PM = document.getElementById("C2-SS");
-				let C3D = document.getElementById("C2-ST");
-				var events3Dict = {C3SMM:C3SMM.checked,C3BOW:C3BOW.checked,C3PM:C3PM.checked,C3D:C3D.checked}
-
-				let C4WM = document.getElementById("C3-SMM");
-				let C4MM = document.getElementById("C3-BOW");
-				let C4PM = document.getElementById("C3-PM");
-				let C4D = document.getElementById("C3-D");
-				let C4SS = document.getElementById("C3-SOS");
-				let C4PS = document.getElementById("C3-PS");
-				let C4FP = document.getElementById("C3-FP");
-				var events4Dict = {C4WM:C4WM.checked,C4MM:C4MM.checked,C4PM:C4PM.checked,C4D:C4D.checked,C4SS:C4SS.checked,C4PS:C4PS.checked,C4FP:C4FP.checked}
-
-				let C5WM = document.getElementById("C5-WM");
-				let C5MM = document.getElementById("C5-MM");
-				let C5HTP = document.getElementById("C5-HTP");
-				let C5ST = document.getElementById("C5-ST");
-				let C5MaM = document.getElementById("C5-MaM");
-				let C5D = document.getElementById("C5-D");
-				let C5SS = document.getElementById("C5-SS");
-				let C5JAM = document.getElementById("C5-JAM");
-				let C5Q = document.getElementById("C5-Q");
-				var events5Dict = {C5WM:C5WM.checked,C5MM:C5MM.checked,C5HTP:C5HTP.checked,C5ST:C5ST.checked,C5MaM:C5MaM.checked,C5D:C5D.checked,C5SS:C5SS.checked,C5JAM:C5JAM.checked,C5Q:C5Q.checked}
-
-				let C6D = document.getElementById("C6-D");
-				let C6B = document.getElementById("C6-B");
-				var events6Dict = {C6D:C6D.checked,C6B:C6B.checked}
-
-				localStorage.setItem("name", name.value);
-				localStorage.setItem("address", address.value);
-				localStorage.setItem("number", number.value);
-				localStorage.setItem("email", email.value);
-				localStorage.setItem("events1", JSON.stringify(events1Dict));
-				localStorage.setItem("events2", JSON.stringify(events2Dict));
-				localStorage.setItem("events3", JSON.stringify(events3Dict));
-				localStorage.setItem("events4", JSON.stringify(events4Dict));
-				localStorage.setItem("events5", JSON.stringify(events5Dict));
-				localStorage.setItem("events6", JSON.stringify(events6Dict));
-
-              window.location = "payment.html"
-            })
-	
-
-			
-	  let sidebar = document.querySelector(".sidebar");
-      let closeBtn = document.querySelector("#btn");
-      let links = document.getElementsByClassName("link");
-      let list_items = document.getElementsByTagName("li");
-      const links_array = Array.from(links);
-      const array_list_items = Array.from(list_items);
-
-      window.onload = remove_links;
-
-      function remove_links(){
-        links_array.forEach(element => {
-          element.remove();
-        });
-        // console.log("removed links");
-      }
-
-      function addlinks(){
-        var counter = 0;
+<body>
+    <header>
+        <h1>Educational AI and Agriculture</h1>
+        <p>One stone, two birds: Advancing education and agriculture through technology.</p>
+    </header>
+    
+    <main>
+        <section class="overview">
+            <h2>Overview</h2>
+            <p><strong>Educational AI and Robot:</strong> 
+                This system collects health parameters of students, creates reports, detects power consumption of smart boards, and aims to improve education.
+            </p>
+            <p><strong>Agricultural AI:</strong> 
+                This system helps farmers manage farms better, predicts weather, monitors farm data, and improves crop health with AI-equipped machinery.
+            </p>
+        </section>
         
-        array_list_items.forEach(element =>{
-          element.appendChild(links_array[counter]);
-          counter += 1;
-        });
-
-        // console.log("added links");
-      }
-
-
-      closeBtn.addEventListener("click", ()=>{
-        sidebar.classList.toggle("open");
-        menuBtnChange();
-      });
-
-
-      function menuBtnChange() {
-      if(sidebar.classList.contains("open")){
-        addlinks();
-        closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");
-      }
-      else {
-        remove_links();
-        closeBtn.classList.replace("bx-menu-alt-right","bx-menu");
-      }}        
-</script>
-
-
-	
-
-
-
-
-</body></html>
+        <section class="business-model">
+            <h2>Business Model Canvas</h2>
+            <table>
+                <tr>
+                    <th>Designed for:</th>
+                    <td>Shark Tank competition</td>
+                </tr>
+                <tr>
+                    <th>Designed by:</th>
+                    <td>Karrthic, Karthik, Samanth, Sanjith</td>
+                </tr>
+                <tr>
+                    <th>Date:</th>
+                    <td>20.07.2024</td>
+                </tr>
+                <tr>
+                    <th>Version:</th>
+                    <td>1.0</td>
+                </tr>
+            </table>
+        </section>
+        
+        <section class="key-parts">
+            <h2>Key Partners</h2>
+            <ul>
+                <li>Educational Institutions</li>
+                <li>Agricultural Organizations</li>
+                <li>Microsoft licenses</li>
+                <li>HP or Lenovo</li>
+                <li>Azure servers</li>
+                <li>Cybersecurity software</li>
+            </ul>
+        </section>
+        
+        <section class="activities">
+            <h2>Key Activities</h2>
+            <h3>Development</h3>
+            <ul>
+                <li>AI and software development</li>
+                <li>Content creation</li>
+                <li>Data management</li>
+            </ul>
+            <h3>Problem Solving</h3>
+            <ul>
+                <li>Technical support</li>
+                <li>Data analysis</li>
+                <li>Content improvement</li>
+                <li>Agricultural research</li>
+            </ul>
+            <h3>Platform/Network</h3>
+            <ul>
+                <li>App development</li>
+                <li>Partnerships and marketing</li>
+            </ul>
+            <h3>Distribution Channels</h3>
+            <ul>
+                <li>Direct sales</li>
+                <li>Partnerships</li>
+            </ul>
+        </section>
+        
+        <section class="benefits">
+            <h2>Benefits</h2>
+            <h3>Education:</h3>
+            <ul>
+                <li>Improves learning curve</li>
+                <li>Holistic development reports</li>
+                <li>Improves health</li>
+                <li>Saves energy</li>
+            </ul>
+            <h3>Agriculture:</h3>
+            <ul>
+                <li>Improves farm management</li>
+                <li>Improves crop production</li>
+            </ul>
+        </section>
+        
+        <section class="differentiators">
+            <h2>Our Differentiators</h2>
+            <ul>
+                <li>Cost effective</li>
+                <li>SDG compliant</li>
+                <li>Convenience and usability</li>
+            </ul>
+        </section>
+        
+        <section class="customer-segments">
+            <h2>Customer Segments</h2>
+            <ul>
+                <li>Schools, Colleges, Universities</li>
+                <li>Farmers</li>
+                <li>Agricultural industry</li>
+            </ul>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Designed by: Samant M Patil, Sanjit Sarva Sunil, Karthik Bhat, Karrthic Sundar</p>
+    </footer>
+</body>
+</html>
