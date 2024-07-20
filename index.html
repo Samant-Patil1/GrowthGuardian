@@ -1,74 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="Resources/Images/logo.png">
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet">
-  <title>SmartGrowth AI / AgriEdu Vision</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="Resources/Images/logo.png">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet">
+  <title>SmartGrowth AI / AgriEdu Vision</title>
 </head>
 <body>
-  <div class="sidebar">
-    <div class="logo-details">
-      <div class="logo_name">SmartGrowth AI</div>
-      <i class="bx bx-menu" id="btn"></i>
-    </div>
-    <ul class="nav-list">
-      <li><a href="#about" class="link"><i class="bx bx-home"></i><span class="links_name">Home</span></a></li>
-      <li><a href="#features" class="link"><i class="bx bx-info-circle"></i><span class="links_name">Features</span></a></li>
-      <li><a href="#contact" class="link"><i class="bx bx-envelope"></i><span class="links_name">Contact</span></a></li>
-    </ul>
-  </div>
+  <div class="sidebar">
+    <div class="logo-details">
+      <div class="logo_name">SmartGrowth AI</div>
+      <i class="bx bx-menu" id="btn"></i>
+    </div>
+    <ul class="nav-list">
+      <li><a href="#about" class="link"><i class="bx bx-home"></i><span class="links_name">Home</span></a></li>
+      <li><a href="#features" class="link"><i class="bx bx-info-circle"></i><span class="links_name">Features</span></a></li>
+      <li><a href="#contact" class="link"><i class="bx bx-envelope"></i><span class="links_name">Contact</span></a></li>
+    </ul>
+  </div>
 
-  <div class="main-content">
-    <section class="hero">
-      <div class="hero-content">
-        <h1>Welcome to SmartGrowth AI / AgriEdu Vision</h1>
-        <p>Transforming Education and Agriculture with Innovative AI Solutions</p>
-        <a href="#contact" class="cta-button">Get in Touch</a>
-      </div>
-    </section>
+  <div class="main-content">
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Welcome to SmartGrowth AI / AgriEdu Vision</h1>
+        <p>Transforming Education and Agriculture with Innovative AI Solutions</p>
+        <a href="#contact" class="cta-button">Get in Touch</a>
+      </div>
+    </section>
 
-    <section id="about" class="container">
-      <h2>About Us</h2>
-      <p>We are dedicated to revolutionizing education and agriculture through AI and robotics. Our goal is to enhance learning outcomes and promote sustainable farming practices.</p>
-      <img src="Resources/Images/about.jpg" alt="About Us" class="about-image">
-    </section>
+    <section id="about" class="container">
+      <h2>About Us</h2>
+      <p>We are dedicated to revolutionizing education and agriculture through AI and robotics. Our goal is to enhance learning outcomes and promote sustainable farming practices.</p>
+    </section>
 
-    <section id="features" class="container">
-      <h2>Our Features</h2>
-      <div class="feature">
-        <h3>Educational AI and Robotics</h3>
-        <p>Interactive lessons, health monitoring, progress reports, and energy efficiency.</p>
-        <img src="Resources/Images/feature1.jpg" alt="Feature 1" class="feature-image">
-      </div>
-      <div class="feature">
-        <h3>Agricultural AI and Robotics</h3>
-        <p>Crop health monitoring, farm management, weather prediction, and autonomous tractors.</p>
-        <img src="Resources/Images/feature2.jpg" alt="Feature 2" class="feature-image">
-      </div>
-    </section>
+    <section id="features" class="container">
+      <h2>Our Features</h2>
+      <div class="feature">
+        <h3>Educational AI and Robotics</h3>
+        <p>Interactive lessons, health monitoring, progress reports, and energy efficiency.</p>
+      </div>
+      <div class="feature">
+        <h3>Agricultural AI and Robotics</h3>
+        <p>Crop health monitoring, farm management, weather prediction, and autonomous tractors.</p>
+      </div>
+    </section>
 
-    <section id="contact" class="container">
-      <h2>Contact Us</h2>
-      <p>For more information, please reach out to us at <a href="mailto:info@smartgrowthai.com">info@smartgrowthai.com</a>.</p>
-      <img src="Resources/Images/contact.jpg" alt="Contact Us" class="contact-image">
-    </section>
+    <section id="contact" class="container">
+      <h2>Contact Us</h2>
+      <p>For more information, please reach out to us at <a href="mailto:info@smartgrowthai.com">info@smartgrowthai.com</a>.</p>
+    </section>
 
-    <footer>
-      <p>&copy; 2024 SmartGrowth AI. All rights reserved.</p>
-    </footer>
-  </div>
+    <footer>
+      <p>&copy; 2024 SmartGrowth AI. All rights reserved.</p>
+    </footer>
+  </div>
 
-  <script>
-    const sidebar = document.querySelector(".sidebar");
-    const closeBtn = document.querySelector("#btn");
+  <script>
+    const sidebar = document.querySelector(".sidebar");
+    const closeBtn = document.querySelector("#btn");
 
-    closeBtn.addEventListener("click", () => {
-      sidebar.classList.toggle("open");
-      closeBtn.classList.toggle("bx-menu-alt-right");
-    });
-  </script>
+    closeBtn.addEventListener("click", () => {
+      sidebar.classList.toggle("open");
+      closeBtn.classList.toggle("bx-menu-alt-right");
+    });
+  </script>
 </body>
 </html>
