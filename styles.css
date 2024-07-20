@@ -1,64 +1,111 @@
-/* Basic styling for the demo website */
-
-body {
-    font-family: Arial, sans-serif;
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
-    background: url('background-image.jpg') no-repeat center center fixed; 
-    background-size: cover; /* Ensures the background covers the entire page */
+    box-sizing: border-box;
+}
+
+/* General styling */
+body {
+    font-family: 'Arial', sans-serif;
     color: #333;
+    line-height: 1.6;
+    background: url('background-image.jpg') no-repeat center center fixed; 
+    background-size: cover;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
 }
 
 header {
-    background-color: rgba(0, 0, 0, 0.6); /* Dark semi-transparent background for header */
+    background-color: rgba(0, 0, 0, 0.7);
     color: #fff;
-    padding: 1.5rem;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a shadow effect */
+    padding: 1.5rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header h1 {
-    font-size: 2.5rem;
-    margin: 0;
+    font-size: 1.8rem;
 }
 
 nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+    list-style: none;
+    display: flex;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 1rem;
+    margin-left: 1.5rem;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 nav ul li a:hover {
     text-decoration: underline;
 }
 
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for text visibility */
+    color: #fff;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.hero-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
 section {
-    padding: 2rem;
-    margin: 1rem auto;
-    max-width: 800px; /* Centers the content and limits the width */
-    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent background for sections */
+    padding: 3rem 1rem;
+    margin: 1rem 0;
+    background-color: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-section h2 {
+h2 {
     font-size: 2rem;
-    color: #007BFF; /* Accent color for headings */
-}
-
-section p {
-    line-height: 1.6;
+    color: #007BFF;
+    margin-bottom: 1rem;
 }
 
 .feature {
@@ -68,24 +115,16 @@ section p {
 .feature h3 {
     font-size: 1.5rem;
     color: #333;
-}
-
-.feature p {
-    font-size: 1rem;
-    color: #666; /* Slightly lighter color for paragraphs */
+    margin-bottom: 0.5rem;
 }
 
 footer {
-    background-color: rgba(0, 0, 0, 0.6); /* Dark semi-transparent background for footer */
+    background-color: rgba(0, 0, 0, 0.7);
     color: #fff;
     text-align: center;
     padding: 1rem;
     position: fixed;
     width: 100%;
     bottom: 0;
-    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1); /* Adds a shadow effect */
-}
-
-footer p {
-    margin: 0;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
 }
