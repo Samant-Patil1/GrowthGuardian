@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    color: white;
+    color: #333;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -11,7 +11,7 @@ body {
 
 header {
     background-color: rgba(255, 255, 255, 0.6);
-    color: white;
+    color: #333;
     text-align: center;
     padding: 2rem 1rem;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 -10px 20px rgba(255, 255, 255, 0.5);
@@ -99,7 +99,7 @@ ul li:hover {
 
 footer {
     background-color: rgba(255, 255, 255, 0.6);
-    color: white;
+    color: #333;
     text-align: center;
     padding: 1rem;
     box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
