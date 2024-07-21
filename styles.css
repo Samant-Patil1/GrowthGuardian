@@ -6,6 +6,7 @@ body {
     overflow-x: hidden;
     background: url("result.jpg.jpg");
     background-color: #121212;
+    background-position: center;
     background-repeat:no-repeat;
     background-size: cover;
 }
