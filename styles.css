@@ -1,8 +1,7 @@
 body {
     font-family: Arial, sans-serif;
-    color: #e0e0e0;
-    background-color: #121212;
-    background-image: url("result.jpg");
+    color: #3c3c3c;
+    background-color: #f0f0f0;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -10,16 +9,18 @@ body {
 }
 
 header {
-    background-color: #1f1f1f;
-    color: #e0e0e0;
+    background-color: #f9f9f9;
+    color: #3c3c3c;
     text-align: center;
-    padding: 1rem;
+    padding: 2rem 1rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    margin: 2rem;
 }
 
 header h1 {
     margin: 0;
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 header p {
@@ -32,19 +33,18 @@ main {
     margin: 0 auto;
     position: relative;
     z-index: 0;
-    margin-bottom: 10vw;/* Ensure content is above background image */
 }
 
 section {
-    background-color: #1e1e1e;
-    border-radius: 8px;
-    padding: 1rem;
-    margin: 1rem 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 2rem;
+    margin: 2rem 0;
+    box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.05), -7px -7px 20px rgba(255, 255, 255, 1);
 }
 
 h2 {
-    color: #4CAF50;
+    color: #6c63ff;
 }
 
 h3 {
@@ -58,13 +58,13 @@ table {
 }
 
 table th, table td {
-    border: 1px solid #333;
+    border: 1px solid #ddd;
     padding: 10px;
     text-align: left;
 }
 
 table th {
-    background-color: #4CAF50;
+    background-color: #6c63ff;
     color: #fff;
 }
 
@@ -74,14 +74,13 @@ ul {
 }
 
 footer {
-    background-color: #1f1f1f;
-    color: #e0e0e0;
+    background-color: #f9f9f9;
+    color: #3c3c3c;
     text-align: center;
-    padding: 0.5rem;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    padding: 1rem;
     box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    margin: 2rem;
 }
 
 /* Background image effect */
@@ -94,10 +93,10 @@ footer {
     background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Sustainable_Development_Goals.png/2560px-Sustainable_Development_Goals.png') no-repeat center center;
     background-size: cover;
     z-index: -1; /* Ensure it’s behind all other content */
-    opacity: 0;
+    opacity: 0.1; /* Lower opacity for a subtle effect */
     transition: opacity 1s ease-in-out;
 }
 
 body.scrolled .background-image {
-    opacity: 1;
+    opacity: 0.2; /* Slightly more visible on scroll */
 }
