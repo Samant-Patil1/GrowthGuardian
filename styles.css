@@ -1,17 +1,17 @@
 body {
     font-family: Arial, sans-serif;
-    color: #3c3c3c;
+    color: #333;
     background-color: #f0f0f0;
-    background: url("result.jpg") no-repeat center center fixed;
-    background-size: cover;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    background: url("result.jpg") no-repeat center center fixed;
+    background-size: cover;
 }
 
 header {
     background-color: #ffffff;
-    color: #3c3c3c;
+    color: #333;
     text-align: center;
     padding: 2rem 1rem;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 -10px 20px rgba(255, 255, 255, 0.5);
@@ -23,17 +23,18 @@ header {
 header h1 {
     margin: 0;
     font-size: 2.5rem;
+    color: #6c63ff;
 }
 
 header p {
     margin: 0.5rem 0;
+    color: #777;
 }
 
 main {
     padding: 1rem;
     max-width: 900px;
     margin: 0 auto;
-    position: relative;
 }
 
 section {
@@ -49,13 +50,16 @@ h2 {
 }
 
 h3 {
-    color: #a0a0a0;
+    color: #6c63ff;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 1rem;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
 }
 
 table th, table td {
@@ -72,11 +76,12 @@ table th {
 ul {
     list-style-type: disc;
     padding-left: 20px;
+    color: #777;
 }
 
 footer {
     background-color: #ffffff;
-    color: #3c3c3c;
+    color: #333;
     text-align: center;
     padding: 1rem;
     box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
