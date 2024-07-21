@@ -1,11 +1,10 @@
 body {
     font-family: Arial, sans-serif;
     color: #333;
-    background-color: #f0f0f0;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    background: url("result.jpg") no-repeat center center fixed;
+    background: url("result.jpg") repeat fixed center center;
     background-size: cover;
 }
 
