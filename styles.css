@@ -2,20 +2,22 @@ body {
     font-family: Arial, sans-serif;
     color: #3c3c3c;
     background-color: #f0f0f0;
+    background: url("result.jpg") no-repeat center center fixed;
+    background-size: cover;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    position: relative;
 }
 
 header {
-    background-color: #f9f9f9;
+    background-color: #ffffff;
     color: #3c3c3c;
     text-align: center;
     padding: 2rem 1rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 -10px 20px rgba(255, 255, 255, 0.5);
     border-radius: 20px;
-    margin: 2rem;
+    margin: 2rem auto;
+    max-width: 900px;
 }
 
 header h1 {
@@ -32,15 +34,14 @@ main {
     max-width: 900px;
     margin: 0 auto;
     position: relative;
-    z-index: 0;
 }
 
 section {
-    background-color: #fff;
+    background-color: #ffffff;
     border-radius: 20px;
     padding: 2rem;
     margin: 2rem 0;
-    box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.05), -7px -7px 20px rgba(255, 255, 255, 1);
+    box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.1), -7px -7px 20px rgba(255, 255, 255, 0.5);
 }
 
 h2 {
@@ -74,29 +75,12 @@ ul {
 }
 
 footer {
-    background-color: #f9f9f9;
+    background-color: #ffffff;
     color: #3c3c3c;
     text-align: center;
     padding: 1rem;
     box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
-    margin: 2rem;
-}
-
-/* Background image effect */
-.background-image {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Sustainable_Development_Goals.png/2560px-Sustainable_Development_Goals.png') no-repeat center center;
-    background-size: cover;
-    z-index: -1; /* Ensure it’s behind all other content */
-    opacity: 0.1; /* Lower opacity for a subtle effect */
-    transition: opacity 1s ease-in-out;
-}
-
-body.scrolled .background-image {
-    opacity: 0.2; /* Slightly more visible on scroll */
+    margin: 2rem auto;
+    max-width: 900px;
 }
