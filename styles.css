@@ -2,6 +2,7 @@ body {
     font-family: Arial, sans-serif;
     color: #e0e0e0;
     background-color: #121212;
+    background-image: url("result.jpg");
     margin: 0;
     padding: 0;
     overflow-x: hidden;
